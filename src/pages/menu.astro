@@ -1,0 +1,205 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <!-- TODO: Add YAML file and have menu page parse menu items from there -->
+	<main>
+    <!-- TODO: Add Mamou Logo -->
+		<h1><strong>Main Menu</strong></h1>
+    <!-- TODO: Add accordion component -->
+		<p class="instructions">
+      <strong>Appetizers</strong><br>
+      <!-- TODO: Add an a+href modal to each menu item to show photo -->
+      Cracked cheese with fuet and honey<br>
+      Stracciatella<br>
+      Palm spring rolls<br>
+      Tofu and smoked fish spring rolls<br>
+      Mamou's bacon steaks<br>
+      Barcia strips<br>
+      Fish fingers with grilled vegetable dip<br>
+      Truffle flavored vegetable mushroom dip with whole wheat melba chips<br>
+		</p>
+		<p class="instructions">
+      <strong>Soup</strong><br>
+      Orange kamote cream soup<br>
+      Mamou mami<br>
+      Vegetable, mushroom and barley soup<br>
+      Hearty lentil soup<br>
+		</p>
+		<p class="instructions">
+      <strong>Salads</strong><br>
+      Healdsburg's harvest<br>
+      Warm couscous salad<br>
+      Caesar salad<br>
+      Mamou's greens<br>
+      Grilled vegetable salad<br>
+      Soft shell crab salad<br>
+		</p>
+		<p class="instructions">
+      <strong>Pastas</strong><br>
+       Lorenzo's truffle cream<br>
+       Spaghettini al olio with labuyo flakes<br>
+       Mario Bottarga al olio<br>
+       Lola Fem's birthday spaghetti<br>
+       Linguini al Nero<br>
+       Pasta Andrada bolognese<br>
+       Mamou's Linguini vongole<br>
+		</p>
+		<p class="instructions">
+      <strong>Sandwiches</strong><br>
+      Roast beef sandwich<br>
+      DRY AGED burger<br>
+      Mamou's shroom burger<br>
+      Lobster roll<br>
+		</p>
+		<p class="instructions">
+      <strong>Weekend Brunch</strong><br>
+      Steak n' eggs<br>
+      Rau's platter<br>
+      Pol's pancake<br>
+      Egg's benedict<br>
+      Pappy's toast<br>
+      French toast<br>
+		</p>
+		<p class="instructions">
+      <strong>Mains - Meat</strong><br>
+      Angus ribeye USDA prime grade steak<br>
+      Dry aged USDA prime grade bone-in ribeye steak<br>
+      Wawa's prime rib<br>
+      28 day dry aged USDA prime grade t-bone steak<br>
+      28 day dry aged USDA prime grade porterhouse steak<br>
+      Lamb chops<br>
+      Kurobata sinigang<br>
+      Roast pork and chicken<br>
+      Lamb tapa<br>
+      Duck adobo flakes<br>
+      Alex's friend chicken<br>
+      Venison curry<br>
+		</p>
+		<p class="instructions">
+      <strong>Mains - Seafood</strong><br>
+      Beer battered fish and malt vinegar<br>
+      Salmon steak<br>
+      Spicy sweet tuyo<br>
+      Steam sea bass<br>
+      Main lobster tails<br>
+      Steamed live MAINE lobster<br>
+		</p>
+		<p class="instructions">
+      <strong>Mains - Vegetarian</strong><br>
+      Grilled vegetable stew<br>
+      Vegetable adobado with pickled ubod<br>
+		</p>
+		<p class="instructions">
+      <strong>Sides</strong><br>
+      Steak rice (white or red)<br>
+      Lamb rice (white or red)<br>
+      Buttered parsley rice (white or red)<br>
+      Cuban rice (white or red)<br>
+      Garlic rice (white or red)<br>
+      Steamed rice (white or red)<br>
+      Baked mashed potatoes<br>
+      Creamed spinach<br>
+      Corn pudding<br>
+      Cuban black beans<br>
+      Nurnburger sausage<br>
+      Vienna sausage<br>
+      Mamou's greens<br>
+      Healdsburg's harvest<br>
+      French fries<br>
+      Pia's garlic noodles<br>
+      Egg<br>
+      "Veggie like rice"<br>
+      Cinnamon saba<br>
+      Brocolli with cottage cheese<br>
+		</p>
+    <h1>Other Menu</h1>
+		<p class="instructions">
+      <strong>Beverages</strong><br>
+      Sodas<br>
+      Mamou's Iced tea<br>
+      Fruit Slush in season<br>
+      Dalandan fruit shake<br>
+      Freshly squeezed orange juice<br>
+      Bottled water<br>
+      Beers<br>
+      Bloody Mamou<br>
+      Mamou's Mimosa<br>
+      Mamou, Hello!<br>
+      Velodka<br>
+      Mamou's Sangria<br>
+      Frozen Margarita<br>
+      Frozen screw driver<br>
+      Frozen mojito<br>
+      Limoncello<br>
+      Martini<br>
+      Vodka<br>
+      Scotch<br>
+		</p>
+		<p class="instructions">
+      <strong>Coffee and Tea</strong><br>
+      Cafe Americano<br>
+      Espresso<br>
+      Tea Selection<br>
+      Capuccino<br>
+      Cafe Latte<br>
+      Hot Chocolate<br>
+		</p>
+		<p class="instructions">
+      <strong>Desserts</strong><br>
+      Crispy milk<br>
+      Dark chocolate sans rival<br>
+      Key lime pie with 'Schlagsahne'<br>
+      Pecan pie with 'Schlagsahne'<br>
+      Frozen hot chocolate<br>
+      Carmen's Best Ice cream<br>
+      Crepe de Mou<br>
+		</p>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
