@@ -1,0 +1,45 @@
+---
+export interface Props {
+	title: string;
+	items: Object[];
+}
+
+const { title, items} = Astro.props;
+---
+
+<style>
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+</style>
+
+<h1><strong>{title}</strong></h1><br>
+{
+	Object.entries(items).map(
+		(item) =>
+		<>
+			{
+				Object.entries(item[1]).map(
+					(category) =>
+					<p class="instructions">
+					<strong>{category[0]}</strong><br>
+					{
+						Object.entries(category[1]).map(
+							(item) =>
+							<>{item[1]}<br></>
+						)
+					}
+					</p>
+				)
+			}
+		</>
+	)
+}
